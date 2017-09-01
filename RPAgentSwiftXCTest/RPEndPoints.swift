@@ -29,7 +29,7 @@ struct RPEndPoints {
             headers: defaultHeader,
             encoding: JSONEncoding.default,
             type: HTTPMethod.post,
-            url: "\(baseURL!)/gaia/launch",
+            url: "\(baseURL!)/launch",
             keyPath:"",
             parameters: [
                 "description": "",
@@ -47,7 +47,7 @@ struct RPEndPoints {
             headers: defaultHeader,
             encoding: JSONEncoding.default,
             type: HTTPMethod.put,
-            url: "\(baseURL!)/gaia/launch/{launchId}/finish",
+            url: "\(baseURL!)/launch/{launchId}/finish",
             keyPath: "",
             parameters: [:],
             returnedObject: FinishData.self
@@ -59,7 +59,7 @@ struct RPEndPoints {
             headers: defaultHeader,
             encoding: JSONEncoding.default,
             type: HTTPMethod.post,
-            url: "\(baseURL!)/gaia/item",
+            url: "\(baseURL!)/item",
             keyPath:"",
             parameters: [
                 "description": "",
@@ -78,7 +78,7 @@ struct RPEndPoints {
             headers: defaultHeader,
             encoding: JSONEncoding.default,
             type: HTTPMethod.put,
-            url: "\(baseURL!)/gaia/item/{itemId}",
+            url: "\(baseURL!)/item/{itemId}",
             keyPath: "",
             parameters: [
                 "end_time": "",
@@ -97,7 +97,7 @@ struct RPEndPoints {
             headers: defaultHeader,
             encoding: JSONEncoding.default,
             type: HTTPMethod.post,
-            url: "\(baseURL!)/gaia/item/{parentId}",
+            url: "\(baseURL!)/item/{parentId}",
             keyPath:"",
             parameters: [
                 "description": "",

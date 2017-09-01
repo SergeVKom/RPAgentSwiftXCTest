@@ -40,7 +40,13 @@ class RPService: NSObject {
         var requestData = endPoints.startLaunch
         requestData.parameters["name"] = bundleProperties["ReportPortalLaunchName"]
         requestData.parameters["start_time"] = currentTime
-        let customTags = (bundleProperties["ReportPortalTags"] as! String).replacingOccurrences(of: ", ", with: ",").components(separatedBy: ",")
+        var customTags: [String] {
+            var tags = [String]()
+            if (bundleProperties["ReportPortalTags"] != nil) {
+                tags = (bundleProperties["ReportPortalTags"] as! String).replacingOccurrences(of: ", ", with: ",").components(separatedBy: ",")
+            }
+            return tags
+        }
         requestData.parameters["tags"] = [currentDevice.systemName, currentDevice.systemVersion, currentDevice.modelName, currentDevice.model] + customTags
         
         httpClient.doRequest(data: requestData) { (result: ItemData) in

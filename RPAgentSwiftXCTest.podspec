@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.author           = { 'SergeVKom' => 'sergey.komarov@oxagile.com' }
     s.source           = { :git => 'https://github.com/SergeVKom/RPAgentSwiftXCTest.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '10.0'
+    s.ios.deployment_target = '9.0'
     s.source_files = 'RPAgentSwiftXCTest/**/*'
 
     s.dependency 'Alamofire', '~> 4.5.0'
