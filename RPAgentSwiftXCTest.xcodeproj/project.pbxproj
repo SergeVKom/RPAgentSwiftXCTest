@@ -15,6 +15,7 @@
 		368751BD1F5867200021B74D /* RPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B61F5867200021B74D /* RPListener.swift */; };
 		368751BE1F5867200021B74D /* RPResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B71F5867200021B74D /* RPResponseObjects.swift */; };
 		368751BF1F5867200021B74D /* RPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B81F5867200021B74D /* RPServices.swift */; };
+		368751E11F5964AA0021B74D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 368751E01F5964AA0021B74D /* README.md */; };
 		5E27702FEC2C81F9DE5237F7 /* Pods_RPAgentSwiftXCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		368751B61F5867200021B74D /* RPListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPListener.swift; sourceTree = "<group>"; };
 		368751B71F5867200021B74D /* RPResponseObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPResponseObjects.swift; sourceTree = "<group>"; };
 		368751B81F5867200021B74D /* RPServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPServices.swift; sourceTree = "<group>"; };
+		368751E01F5964AA0021B74D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +51,7 @@
 		3687519B1F5866CA0021B74D = {
 			isa = PBXGroup;
 			children = (
+				368751E01F5964AA0021B74D /* README.md */,
 				368751B01F5867140021B74D /* Podfile */,
 				368751A71F5866CA0021B74D /* RPAgentSwiftXCTest */,
 				368751A61F5866CA0021B74D /* Products */,
@@ -219,6 +222,7 @@
 				368751BB1F5867200021B74D /* RPConstants.swift in Sources */,
 				368751BE1F5867200021B74D /* RPResponseObjects.swift in Sources */,
 				368751BC1F5867200021B74D /* RPEndPoints.swift in Sources */,
+				368751E11F5964AA0021B74D /* README.md in Sources */,
 				368751B91F5867200021B74D /* EndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
