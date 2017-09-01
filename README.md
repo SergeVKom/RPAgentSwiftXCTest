@@ -1,16 +1,9 @@
 # RPAgentSwiftXCTest
 
 
-[![CI Status](http://img.shields.io/travis/SergeVKom/RPAgentSwiftXCTest.svg?style=flat)](https://travis-ci.org/SergeVKom/RPAgentSwiftXCTest)
 [![Version](https://img.shields.io/cocoapods/v/RPAgentSwiftXCTest.svg?style=flat)](http://cocoapods.org/pods/RPAgentSwiftXCTest)
 [![License](https://img.shields.io/cocoapods/l/RPAgentSwiftXCTest.svg?style=flat)](http://cocoapods.org/pods/RPAgentSwiftXCTest)
 [![Platform](https://img.shields.io/cocoapods/p/RPAgentSwiftXCTest.svg?style=flat)](http://cocoapods.org/pods/RPAgentSwiftXCTest)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -21,9 +14,20 @@ it, simply add the following line to your Podfile:
 pod "RPAgentSwiftXCTest"
 ```
 
+## Report Portal properties
+
+Use info.plist file of your test target to specify properties of Report Portal:
+
+ReportPortalURL - URL to report portal (exaple https://report-portal.company.com/api/v1/project).
+ReportPortalToken - token for authentication which can be get from RP account settings.
+ReportPortalLaunchName - Name of launch.
+Principal class - use RPAgentSwiftXCTest.RPListener from RPAgentSwiftXCTest lib. Also you can overide and specify your own Listener.
+PushTestDataToReportPortal - can be used for switch off/on reporting
+ReportPortalTags(optinal) - can be used to specify tags which should be separeted by comma.
+
 ## Author
 
-SergeVKom, sergey.komarov@oxagile.com
+SergeVKom, sergvkom@gmail.com
 
 ## License
 
