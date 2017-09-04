@@ -30,6 +30,9 @@ Use info.plist file of your test target to specify properties of Report Portal:
 * PushTestDataToReportPortal - can be used for switch off/on reporting
 * ReportPortalTags(optinal) - can be used to specify tags, separeted by comma.
 
+Exaple:
+![Alt text](https://github.com/SergeVKom/RPAgentSwiftXCTest/blob/master/Screen%20Shot.png)
+
 ## Author
 
 SergeVKom, sergvkom@gmail.com
