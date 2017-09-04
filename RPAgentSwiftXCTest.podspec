@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RPAgentSwiftXCTest'
-    s.version          = '1.3'
+    s.version          = '1.4'
     s.summary          = 'Agent to push test results on Report Portal'
 
     s.description      = <<-DESC
@@ -13,9 +13,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/SergeVKom/RPAgentSwiftXCTest.git', :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
-    s.osx.deployment_target = '10.10'
     s.tvos.deployment_target = '9.0'
-    s.watchos.deployment_target = '2.0'
     s.source_files = 'RPAgentSwiftXCTest/**/*'
 
     s.dependency 'Alamofire', '~> 4.5.0'
