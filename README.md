@@ -13,17 +13,22 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RPAgentSwiftXCTest"
 ```
+and install it:
+```bash
+cd <project>
+pod install
+```
 
 ## Report Portal properties
 
 Use info.plist file of your test target to specify properties of Report Portal:
 
-ReportPortalURL - URL to report portal (exaple https://report-portal.company.com/api/v1/project).
-ReportPortalToken - token for authentication which can be get from RP account settings.
-ReportPortalLaunchName - Name of launch.
-Principal class - use RPAgentSwiftXCTest.RPListener from RPAgentSwiftXCTest lib. Also you can overide and specify your own Listener.
-PushTestDataToReportPortal - can be used for switch off/on reporting
-ReportPortalTags(optinal) - can be used to specify tags which should be separeted by comma.
+* ReportPortalURL - URL to API of report portal (exaple https://report-portal.company.com/api/v1/project).
+* ReportPortalToken - token for authentication which can be get from RP account settings.
+* ReportPortalLaunchName - name of launch.
+* Principal class - use RPAgentSwiftXCTest.RPListener from RPAgentSwiftXCTest lib. Also you can specify your own Observer which should conform [XCTestObservation](https://developer.apple.com/documentation/xctest/xctestobservation) protocol.
+* PushTestDataToReportPortal - can be used for switch off/on reporting
+* ReportPortalTags(optinal) - can be used to specify tags, separeted by comma.
 
 ## Author
 
