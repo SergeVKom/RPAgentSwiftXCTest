@@ -18,14 +18,11 @@ class RPService: NSObject {
     var launchStatus = TestStatus.passed.rawValue
     var testCaseID = ""
     var testID = ""
-    var dateFormatter: DateFormatter {
+    var currentTime: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        return formatter
-    }
-    var currentTime: String {
-        return dateFormatter.string(from: Date())
+        return formatter.string(from: Date())
     }
     let semaphore = DispatchSemaphore(value: 0)
     let timeOutForRequestExpectation = 10.0
@@ -102,6 +99,18 @@ class RPService: NSObject {
         requestData.parameters["start_time"] = currentTime
         httpClient.doRequest(data: requestData) { (result: ItemData) in
             self.testID = result.id
+            self.semaphore.signal()
+        }
+        _ = semaphore.wait(timeout: .now() + timeOutForRequestExpectation)
+    }
+    
+    func reportError(message: String) {
+        var requestData = endPoints.postLog
+        requestData.parameters["item_id"] = self.testID
+        requestData.parameters["level"] = "error"
+        requestData.parameters["message"] = message
+        requestData.parameters["time"] = currentTime
+        httpClient.doRequest(data: requestData) { (result: ItemData) in
             self.semaphore.signal()
         }
         _ = semaphore.wait(timeout: .now() + timeOutForRequestExpectation)

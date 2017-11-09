@@ -110,4 +110,21 @@ struct RPEndPoints {
             returnedObject: ItemData.self
         )
     }
+    
+    var postLog:EndPoint {
+        return EndPoint(
+            headers: defaultHeader,
+            encoding: JSONEncoding.default,
+            type: HTTPMethod.post,
+            url: "\(baseURL!)/log",
+            keyPath:"",
+            parameters: [
+                "item_id": "",
+                "level": "",
+                "message": "",
+                "time": ""
+            ],
+            returnedObject: ItemData.self
+        )
+    }
 }
