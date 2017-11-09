@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		368751B11F5867140021B74D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 368751B01F5867140021B74D /* Podfile */; };
 		368751B91F5867200021B74D /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B21F5867200021B74D /* EndPoint.swift */; };
 		368751BA1F5867200021B74D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B31F5867200021B74D /* HTTPClient.swift */; };
 		368751BB1F5867200021B74D /* RPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B41F5867200021B74D /* RPConstants.swift */; };
@@ -25,7 +24,6 @@
 		1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		368751A51F5866CA0021B74D /* RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368751A91F5866CA0021B74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368751B01F5867140021B74D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		368751B21F5867200021B74D /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		368751B31F5867200021B74D /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		368751B41F5867200021B74D /* RPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPConstants.swift; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 				368751E41F596E990021B74D /* LICENSE */,
 				368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */,
 				368751E01F5964AA0021B74D /* README.md */,
-				368751B01F5867140021B74D /* Podfile */,
 				368751A71F5866CA0021B74D /* RPAgentSwiftXCTest */,
 				368751A61F5866CA0021B74D /* Products */,
 				7D5FA0B8C6D6D72556763B1E /* Pods */,
@@ -180,7 +177,6 @@
 			files = (
 				368751E11F5964AA0021B74D /* README.md in Resources */,
 				368751E51F596E990021B74D /* LICENSE in Resources */,
-				368751B11F5867140021B74D /* Podfile in Resources */,
 				368751E31F596BC70021B74D /* RPAgentSwiftXCTest.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
