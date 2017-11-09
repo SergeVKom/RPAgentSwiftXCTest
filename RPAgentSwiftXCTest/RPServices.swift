@@ -57,7 +57,7 @@ class RPService: NSObject {
         var requestData = endPoints.startTestCase
         var testCaseName: String {
             var sentence = ""
-            for eachCharacter in testCase.name!.characters {
+            for eachCharacter in Array(testCase.name) {
                 if (eachCharacter >= "A" && eachCharacter <= "Z") == true {
                     sentence.append(" ")
                 }
@@ -78,9 +78,9 @@ class RPService: NSObject {
     func startTest(_ test: XCTestCase) {
         var requestData = endPoints.startTest
         var testName: String {
-            let camelStyleName = String(test.name!.components(separatedBy: " ")[1].characters.dropLast())
+            let camelStyleName = Array(String(test.name.components(separatedBy: " ")[1]).dropLast())
             var sentence = ""
-            for eachCharacter in camelStyleName.characters {
+            for eachCharacter in camelStyleName {
                 if (eachCharacter >= "A" && eachCharacter <= "Z") == true {
                     sentence.append(" ")
                 }

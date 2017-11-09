@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RPAgentSwiftXCTest'
-    s.version          = '1.8'
+    s.version          = '1.9'
     s.summary          = 'Agent to push test results on Report Portal'
 
     s.description      = <<-DESC

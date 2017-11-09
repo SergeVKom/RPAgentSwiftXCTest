@@ -13,33 +13,34 @@ public class RPListener: NSObject, XCTestObservation {
     
     let serviceRP = RPService()
     let queue = DispatchQueue(label: "com.oxagile.report.portal", qos: .utility)
-    var pushData: Bool {
-        guard let path = testBundle.path(forResource: "Info", ofType: "plist") else { return false }
-        bundleProperties = NSDictionary(contentsOfFile: path) as? [String: Any]
-        return bundleProperties?["PushTestDataToReportPortal"] as! Bool
-    }
     var bundleProperties: [String: Any]!
     
     public override init() {
         super.init()
-        if pushData { XCTestObservationCenter.shared().addTestObserver(self) }
+        XCTestObservationCenter.shared.addTestObserver(self)
     }
     
     public func testBundleWillStart(_ testBundle: Bundle) {
+        guard let path = testBundle.path(forResource: "Info", ofType: "plist") else { return }
+        bundleProperties = NSDictionary(contentsOfFile: path) as? [String: Any]
+        guard bundleProperties?["PushTestDataToReportPortal"] as! Bool else {
+            XCTestObservationCenter.shared.removeTestObserver(self)
+            return
+        }
         queue.async {
             self.serviceRP.startLaunch(self.bundleProperties)
         }
     }
     
     public func testSuiteWillStart(_ testSuite: XCTestSuite) {
-        if !testSuite.name!.contains("Selected tests"), !testSuite.name!.contains(".xctest") {
+        if !testSuite.name.contains("Selected tests"), !testSuite.name.contains(".xctest") {
             queue.async {
                 self.serviceRP.startTestCase(testSuite)
             }
         }
     }
     
-    public func testSuite(_ testSuite: XCTestSuite, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: UInt) {
+    public func testSuite(_ testSuite: XCTestSuite, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: Int) {
         
     }
     
@@ -49,9 +50,9 @@ public class RPListener: NSObject, XCTestObservation {
         }
     }
     
-    public func testCase(_ testCase: XCTestCase, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: UInt) {
+    public func testCase(_ testCase: XCTestCase, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: Int) {
         queue.async {
-            self.serviceRP.reportError(message: "Test '\(testCase.name))' failed on line \(lineNumber), \(description)")
+            self.serviceRP.reportError(message: "Test '\(String(describing: testCase.name)))' failed on line \(lineNumber), \(description)")
         }
     }
     
@@ -62,7 +63,7 @@ public class RPListener: NSObject, XCTestObservation {
     }
     
     public func testSuiteDidFinish(_ testSuite: XCTestSuite) {
-        if !testSuite.name!.contains("Selected tests"), !testSuite.name!.contains(".xctest") {
+        if !testSuite.name.contains("Selected tests"), !testSuite.name.contains(".xctest") {
             queue.async {
                 self.serviceRP.finishTestCase()
             }
