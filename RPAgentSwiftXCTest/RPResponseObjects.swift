@@ -7,30 +7,24 @@
 //
 
 import Foundation
-import ObjectMapper
 
-
-struct ItemData: Mappable {
-    var id = ""
-    var message = ""
-    
-    init(map: Map) { }
-    init() { }
-    
-    mutating func mapping(map: Map) {
-        id          <- map["id"]
-        message     <- map["message"]
-    }
+struct ItemData: Decodable {
+  let id: String
+  let message: String
 }
 
-struct FinishData: Mappable {
-    var msg: String = ""
+enum FinishDataKeys: String, CodingKey {
+  case msg = "msg"
+  case message = "message"
+}
+
+struct FinishData: Decodable {
+    let msg: String
     
-    init(map: Map) { }
-    init() { }
-    
-    mutating func mapping(map: Map) {
-        msg         <- map["msg"]
-        msg         <- map["message"]
-    }
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: FinishDataKeys.self) //?? decoder["message"]
+    let msg = try? container.decode(String.self, forKey: .msg)
+    self.msg = try msg ?? container.decode(String.self, forKey: .message)
+  }
+  
 }

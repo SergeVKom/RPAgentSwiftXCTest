@@ -14,14 +14,9 @@
 		368751BD1F5867200021B74D /* RPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B61F5867200021B74D /* RPListener.swift */; };
 		368751BE1F5867200021B74D /* RPResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B71F5867200021B74D /* RPResponseObjects.swift */; };
 		368751BF1F5867200021B74D /* RPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B81F5867200021B74D /* RPServices.swift */; };
-		368751E11F5964AA0021B74D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 368751E01F5964AA0021B74D /* README.md */; };
-		368751E31F596BC70021B74D /* RPAgentSwiftXCTest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */; };
-		368751E51F596E990021B74D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 368751E41F596E990021B74D /* LICENSE */; };
-		5E27702FEC2C81F9DE5237F7 /* Pods_RPAgentSwiftXCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		368751A51F5866CA0021B74D /* RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368751A91F5866CA0021B74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368751B21F5867200021B74D /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -35,7 +30,6 @@
 		368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RPAgentSwiftXCTest.podspec; sourceTree = "<group>"; };
 		368751E41F596E990021B74D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E27702FEC2C81F9DE5237F7 /* Pods_RPAgentSwiftXCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +51,6 @@
 				368751E01F5964AA0021B74D /* README.md */,
 				368751A71F5866CA0021B74D /* RPAgentSwiftXCTest */,
 				368751A61F5866CA0021B74D /* Products */,
-				7D5FA0B8C6D6D72556763B1E /* Pods */,
 				5E2553DE125A922D314D9E51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -94,15 +86,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7D5FA0B8C6D6D72556763B1E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */,
-				D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,12 +103,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368751AD1F5866CA0021B74D /* Build configuration list for PBXNativeTarget "RPAgentSwiftXCTest" */;
 			buildPhases = (
-				3F10301566A52FB55C79DAB1 /* [CP] Check Pods Manifest.lock */,
 				368751A01F5866CA0021B74D /* Sources */,
 				368751A11F5866CA0021B74D /* Frameworks */,
 				368751A21F5866CA0021B74D /* Headers */,
 				368751A31F5866CA0021B74D /* Resources */,
-				72E300789815C8EEFD2C7A27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,12 +123,12 @@
 		3687519C1F5866CA0021B74D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Sergey Komarov";
 				TargetAttributes = {
 					368751A41F5866CA0021B74D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = R93392F56E;
+						DevelopmentTeam = Z67ED9EGR3;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -175,49 +156,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368751E11F5964AA0021B74D /* README.md in Resources */,
-				368751E51F596E990021B74D /* LICENSE in Resources */,
-				368751E31F596BC70021B74D /* RPAgentSwiftXCTest.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3F10301566A52FB55C79DAB1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RPAgentSwiftXCTest-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72E300789815C8EEFD2C7A27 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		368751A01F5866CA0021B74D /* Sources */ = {
@@ -251,6 +193,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -258,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -311,6 +255,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -318,6 +263,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -353,12 +299,11 @@
 		};
 		368751AE1F5866CA0021B74D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = R93392F56E;
+				DEVELOPMENT_TEAM = Z67ED9EGR3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -382,12 +327,11 @@
 		};
 		368751AF1F5866CA0021B74D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = R93392F56E;
+				DEVELOPMENT_TEAM = Z67ED9EGR3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
