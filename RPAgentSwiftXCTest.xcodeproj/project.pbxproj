@@ -23,7 +23,6 @@
 /* Begin PBXFileReference section */
 		1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		368751A51F5866CA0021B74D /* RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		368751A91F5866CA0021B74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368751B21F5867200021B74D /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		368751B31F5867200021B74D /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		368751B41F5867200021B74D /* RPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPConstants.swift; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 				368751B61F5867200021B74D /* RPListener.swift */,
 				368751B71F5867200021B74D /* RPResponseObjects.swift */,
 				368751B81F5867200021B74D /* RPServices.swift */,
-				368751A91F5866CA0021B74D /* Info.plist */,
 			);
 			path = RPAgentSwiftXCTest;
 			sourceTree = "<group>";
