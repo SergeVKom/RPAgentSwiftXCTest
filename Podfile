@@ -4,6 +4,6 @@
 target 'RPAgentSwiftXCTest' do
     use_frameworks!
 
-    pod 'Alamofire'
+    pod 'Alamofire', '~> 4.8.2'
     pod 'AlamofireObjectMapper'
 end
