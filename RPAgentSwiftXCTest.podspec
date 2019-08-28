@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.tvos.deployment_target = '9.0'
     s.source_files = 'RPAgentSwiftXCTest/**/*'
 
-    s.dependency 'Alamofire', '~> 4.5.1'
+    s.dependency 'Alamofire', '~> 4.8.2'
     s.dependency 'AlamofireObjectMapper', '~> 5.0.0'
 
     s.weak_framework = "XCTest"
